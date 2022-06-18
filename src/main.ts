@@ -11,6 +11,6 @@ async function bootstrap() {
     })
   );
   await app.listen(3000);
-  Logger.log(`server is running on port: ${3000}`, 'SERVER INFORMATION');
+  Logger.log(` nest.js server is running on port: ${3000}`, 'SERVER INFORMATION');
 }
 bootstrap();
