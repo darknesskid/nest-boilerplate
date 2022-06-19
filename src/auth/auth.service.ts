@@ -27,7 +27,7 @@ export class AuthService {
             if (await argon.verify(user.hash, dto.password)) {
                 delete user.hash;
                 return {
-                    token: await this.signToken(user.id, user.email),
+                    access_token: await this.signToken(user.id, user.email),
                     message: 'You Are signed in'
                 }
             } else {
